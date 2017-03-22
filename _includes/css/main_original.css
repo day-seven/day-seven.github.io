@@ -25,7 +25,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18BC9C;
+    color: #{{ site.color.primary }};
 }
 
 h1,
@@ -66,15 +66,15 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18BC9C;
+    background-color: #{{ site.color.primary }};
 }
 
 hr.star-primary {
-    border-color: #FD6E8A;
+    border-color: #{{ site.color.secondary }};
 }
 
 hr.star-primary:after {
-    color: #FD6E8A;
+    color: #{{ site.color.secondary }};
     background-color: #fff;
 }
 
@@ -85,7 +85,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18BC9C;
+    background: red;
 }
 
 header .container {
@@ -171,7 +171,6 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
-	background: #2C3E50;
 }
 
 section {
@@ -185,7 +184,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18BC9C;
+    background: #{{ site.color.primary }};
 }
 
 @media(max-width:767px) {
@@ -215,7 +214,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,288,156,.9);
+    background: rgba({{ site.color.primary-rgb }},.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -269,7 +268,7 @@ section.success {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18BC9C;
+    color: #{{ site.color.primary }};
     background: #fff;
 }
 
@@ -322,7 +321,7 @@ section.success {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18BC9C;
+    color: #{{ site.color.primary }};
 }
 
 form .row:first-child .floating-label-form-group {
@@ -339,7 +338,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2C3E50;
+    background-color: #{{ site.color.secondary }};
 }
 
 footer .footer-col {
@@ -348,7 +347,7 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: #{{ site.color.secondary-dark }};
 }
 
 .btn-social {
@@ -432,7 +431,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #FD6E8A;
+    background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -442,14 +441,14 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #FD6E8A;
+    background-color: #{{ site.color.secondary }};
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
 .navbar-nav>.active>a {
-    background-color: #233140 !important;
+    background-color: #{{ site.color.secondary-dark }} !important;
 }
 
 /* Fix modal mouse wheel issues */
